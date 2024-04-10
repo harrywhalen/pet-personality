@@ -1,0 +1,147 @@
+@font-face {
+    font-family: TTnorms;
+    src: url(TTNorms-Regular.otf);
+}
+html{
+text-align: center;
+font-family: "TTnorms", sans-serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+background-color: #F1EEDC;
+
+}
+body {
+    margin-bottom: 50px;
+}
+.head {
+    color: #bf3144;
+    font-family: "TTnorms";
+}
+.main-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.img-container{
+    display: inline-flex
+}
+
+
+.banner{
+    width: 100%; 
+    height: 200px; 
+    right: 0px; left: 0px; 
+    font-size:24px; 
+    text-align:center;
+
+    background: #bf3144
+}
+/*linear-gradient (, 20%, #F1EEDC);*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+.testbutton{
+    height: 50px;
+    padding: 0px;
+    background: #bf3144;
+    border: none;
+    outline: none;
+    padding: 24px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-family: "TTnorms";
+    }
+
+.linkbutton{
+    height: 20px;
+    padding: 0px;
+    background: #bf3144;
+    border: none;
+    outline: none;
+    padding: 24px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-family: "TTnorms";
+}
+.testbutton:hover {
+    background-color: #922635;
+    }
+.question:hover {
+    background-color: #922635;
+    }
+.linkbutton:hover {
+    background-color: #922635;
+    }
+
+
+        
+        
+.quicksand-default {
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+        }
+
+.question {
+    font-size: 20pt;
+    height: 10px;
+    width: 75px;
+    padding: 0px;
+    background: #bf3144;
+    border: none;
+    padding: 24px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-family: "TTnorms";
+    position: relative;
+
+          }
+          
+.question label,
+.question input {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+}
+          
+.question input[type="radio"] {
+            opacity: 0.011;
+            z-index: 100;
+}
+          
+.question input[type="radio"]:checked + label {
+            background: #20b8be;
+            border-radius: 4px;
+}
+          
+@media screen and (max-width: 768px) {
+    .button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }

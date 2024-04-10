@@ -2,12 +2,100 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Personality</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <h1>Welcome</h1>
-    <p>This is my Pet Personality matcher website.</p>
+<body style="margin: 0; padding: 0; margin-bottom: 50px;">
+    <div class="banner"></div>
+
+    <h1 class="head">Welcome</h1>
+    <div class="img-container">
+      <img class="main-pic" src="yoshi.jpg" alt="">
+      <img class="main-pic" src="wonder.jpg">
+    </div>
+    <h1 class="head">Looking for your best friend fur-ever? Take this quick personality test to find a pet that matches you!</h1>
+    <h4>Note: All information is as of 4/9/24, and may not be updated. <br> If any links don't work, check out all the cats and dogs availiable for adoption on the SFSPCA website.</h4>
+    <a class="linkbutton" onclick="window.open('https://www.sfspca.org/adoptions/', '_blank')">SFSPCA Adoptions</a>
+    
+    <h2>Are you looking for a cat or a dog?</h2>
+
+    <div class="question">
+        <input type="radio" id="catbutton" name="q1" />
+        <label class="btn btn-default" for="catbutton">Cat!</label>
+      </div>
+      <div class="question">
+        <input type="radio" id="dogbutton" name="q1" />
+        <label class="btn btn-default" for="dogbutton">Dog!</label>
+      </div>
+
+
+    <h2>Do you prefer 80's rock music or modern pop?</h2>
+
+    <div class="question">
+        <input type="radio" id="oldmusicbutton" name="q2"/>
+        <label class="btn btn-default" for="oldmusicbutton">Old stuff!</label>
+    </div>
+    <div class="question">
+      <input type="radio" id="newmusicbutton" name="q2"/>
+      <label class="btn btn-default" for="newmusicbutton">New stuff!</label>
+    </div>
+
+    <h2>Would you rather go out with friends or stay home?</h2>
+
+    <div class="question">
+      <input type="radio" id="gooutbutton" name="q3"/>
+      <label class="btn btn-default" for="gooutbutton">Go out!</label>
+    </div>
+    <div class="question">
+      <input type="radio" id="stayhomebutton" name="q3"/>
+      <label class="btn btn-default" for="stayhomebutton">Stay home!</label>
+    </div>
+
+    <h2>Do you prefer to have a scheduled day or improvise?</h2>
+
+    <div class="question">
+      <input type="radio" id="schedulebutton" name="q4"/>
+      <label class="btn btn-default" for="schedulebutton">Schedule!</label>
+    </div>
+    <div class="question">
+      <input type="radio" id="improvisebutton" name="q4"/>
+      <label class="btn btn-default" for="improvisebutton">Improvise!</label>
+    </div>
+
+    <h2>Would you prefer a challenging run or a relaxing yoga session?</h2>
+
+    <div class="question">
+      <input type="radio" id="runbutton" name="q5"/>
+      <label class="btn btn-default" for="runbutton">Run!</label>
+    </div>
+    <div class="question">
+      <input type="radio" id="yogabutton" name="q5"/>
+      <label class="btn btn-default" for="yogabutton">Yoga!</label>
+    </div>
+    
+    <h2>Do you consider yourself a serious or playful person?</h2>
+
+    <div class="question">
+      <input type="radio" id="seriousbutton" name="q6"/>
+      <label class="btn btn-default" for="seriousbutton">Serious!</label>
+    </div>
+    <div class="question">
+      <input type="radio" id="playfulbutton" name="q6"/>
+      <label class="btn btn-default" for="playfulbutton">Playful!</label>
+    </div>
+    <div>
+      <button class="testbutton" id="resultbutton" style="margin-top: 20px;">Show results!</button>
+    </div>
+    <h2 id="resultTitle" style="color: crimson;"></h2>
+    <div id="matchedPets"></div>
+
+      
+<script src="app.js"></script>        
 </body>
 
 </html>
