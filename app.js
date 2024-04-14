@@ -189,7 +189,6 @@ document.getElementById("resultbutton").addEventListener('click' , function(){
             });
         }
         
-    }
     });
 
 function checkmatch(list) {
