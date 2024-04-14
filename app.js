@@ -1,4 +1,3 @@
-console.log("hellow world");
 let petchoice
 let musicchoice
 let gooutchoice
@@ -9,14 +8,13 @@ let useranswers = []
 const matchedPets=[]
 
 //all cats
-let biz=["cat", "old", "stay home", "schedule", "yoga", "playful"]
-let yoshi=["cat", "old", "stay home", "schedule", "yoga", "serious"]
-let parsely=["cat", "new", "stay home", "schedule", "run", "serious"]
-let snoop=["cat", "old", "go out", "schedule", "run", "serious"]
-let smokey=["cat", "old", "stay home", "improvise", "yoga", "playful"]
-let turtle=["cat", "old", "stay home", "schedule", "yoga", "serious"]
+let queenquintessa=["cat", "old", "stay home", "schedule", "yoga", "playful"]
+let murphy=["cat", "old", "stay home", "schedule", "yoga", "serious"]
+let eva=["cat", "new", "stay home", "schedule", "run", "serious"]
+let luna=["cat", "old", "go out", "schedule", "run", "serious"]
+let ginger=["cat", "old", "stay home", "schedule", "yoga", "serious"]
 let mickey=["cat", "new", "stay home", "schedule", "run", "playful"]
-let sebastian=["cat", "new", "stay home", "improvise", "run", "playful"]
+let camille=["cat", "new", "stay home", "improvise", "run", "playful"]
 
 //all dogs
 let tulip=['dog', "new", 'go out', 'schedule', 'run', 'playful']
@@ -111,35 +109,33 @@ document.getElementById("resultbutton").addEventListener('click' , function(){
         document.getElementById('resultTitle').innerHTML = 'You might like:';
 
         if (petchoice=='cat'){
-        if (checkmatch(biz) >= 4){
-            matchedPets.push({ name: 'Biz', image: 'biz.jpg', description: 'https://www.sfspca.org/sfspca-adoption/17524988/' });
+        if (checkmatch(queenquintessa) >= 4){
+            matchedPets.push({ name: 'Queen Quintessa', image: 'queenquintessa.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55431244/' });
         }
-        if (checkmatch(yoshi) >= 4){
-            matchedPets.push({ name: 'Yoshi', image: 'yoshi.jpg', description: 'https://www.sfspca.org/sfspca-adoption/29423157/' });
+        if (checkmatch(murphy) >= 4){
+            matchedPets.push({ name: 'Murphy', image: 'murphy.jpg', description: 'https://www.sfspca.org/sfspca-adoption/14188207/' });
 
         }
-        if (checkmatch(parsely) >= 4){
-            matchedPets.push({ name: 'Parsley', image: 'parsley.jpg', description: 'https://www.sfspca.org/sfspca-adoption/53830288/' });
+        if (checkmatch(eva) >= 4){
+            matchedPets.push({ name: 'Eva', image: 'eva.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55585619/' });
 
         }
-        if (checkmatch(snoop) >= 4){
-            matchedPets.push({ name: 'Snoop', image: 'snoop.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55522272/' });
+        if (checkmatch(luna) >= 4){
+            matchedPets.push({ name: 'Luna', image: 'luna.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55716131/' });
 
         }
-        if (checkmatch(smokey) >= 4){
-            matchedPets.push({ name: 'Smokey', image: 'smokey.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55522284/' });
 
         }
-        if (checkmatch(turtle) >= 4){
-            matchedPets.push({ name: 'Turtle', image: 'turtle.jpg', description: 'https://www.sfspca.org/sfspca-adoption/39582481/' });
+        if (checkmatch(ginger) >= 4){
+            matchedPets.push({ name: 'Ginger', image: 'ginger.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55716114/' });
 
         }
         if (checkmatch(mickey) >= 4){
             matchedPets.push({ name: 'Mickey', image: 'mickey.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55552508/' });
 
         }
-        if (checkmatch(sebastian) >= 4){
-            matchedPets.push({ name: 'Sebastian', image: 'sebastian.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55554449/' });
+        if (checkmatch(camille) >= 4){
+            matchedPets.push({ name: 'Camille', image: 'camille.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55701416/' });
     
         }
         }
@@ -152,26 +148,16 @@ document.getElementById("resultbutton").addEventListener('click' , function(){
             if (checkmatch(poppy) >= 5){matchedPets.push({ name: 'Poppy', image: 'poppy.jpg', description: 'https://www.sfspca.org/sfspca-adoption/54742054/' });}
             if (checkmatch(patch) >= 5){matchedPets.push({ name: 'Patch', image: 'patch.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55256620/' });}
             if (checkmatch(hershey) >= 5){matchedPets.push({ name: 'Hershey', image: 'hershey.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55133866/' });}
-            if (checkmatch(bowie) >= 5){matchedPets.push({ name: 'Bowie', image: 'bowie.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55036330/' });}
-            if (checkmatch(nami) >= 5){matchedPets.push({ name: 'Nami', image: 'nami.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55286816/' });}
             if (checkmatch(angel) >= 5){matchedPets.push({ name: 'Angel', image: 'angel.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55416417/' });}
-            if (checkmatch(eddie) >= 5){matchedPets.push({ name: 'Eddie', image: 'eddie.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55431629/' });}
-            if (checkmatch(luca) >= 5){matchedPets.push({ name: 'Luca', image: 'luca.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55477842/' });}
-            if (checkmatch(pearl) >= 5){matchedPets.push({ name: 'Pearl', image: 'pearl.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55478398/' });}
             if (checkmatch(dumpling) >= 5){matchedPets.push({ name: 'Dumpling', image: 'dumpling.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55498384/' });}
-            if (checkmatch(opal) >= 5){matchedPets.push({ name: 'Opal', image: 'opal.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55499004/' });}
             if (checkmatch(reina) >= 5){matchedPets.push({ name: 'Reina', image: 'reina.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55000518/' });}
             if (checkmatch(walter) >= 5){matchedPets.push({ name: 'Walter', image: 'walter.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55498409/' });}
-            if (checkmatch(posey) >= 5){matchedPets.push({ name: 'Posey', image: 'posey.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55602829/' });}
             if (checkmatch(forest) >= 5){matchedPets.push({ name: 'Forest', image: 'forest.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55603093/' });}
             if (checkmatch(diesel) >= 5){matchedPets.push({ name: 'Diesel', image: 'diesel.jpg', description: 'https://www.sfspca.org/sfspca-adoption/54172571/' });}
-            if (checkmatch(miniwheat) >= 5){matchedPets.push({ name: 'Miniwheat', image: 'miniwheat.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55634447/' });}
-            if (checkmatch(honeybunches) >= 5){matchedPets.push({ name: 'Honey Bunches', image: 'honeybunches.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55634458/' });}
             if (checkmatch(ollie) >= 5){matchedPets.push({ name: 'Ollie', image: 'ollie.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55644640/' });}
             if (checkmatch(cole) >= 5){matchedPets.push({ name: 'Cole', image: 'cole.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55644680/' });}
             if (checkmatch(missy) >= 5){matchedPets.push({ name: 'Missy', image: 'missy.jpg', description: 'https://www.sfspca.org/sfspca-adoption/50407496/' });}
             if (checkmatch(rocket) >= 5){matchedPets.push({ name: 'Rocket', image: 'rocket.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55109949/' });}
-            if (checkmatch(cosmo) >= 5){matchedPets.push({ name: 'Cosmo', image: 'cosmo.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55671917/' });}
             if (checkmatch(rubyred) >= 5){matchedPets.push({ name: 'Ruby Red', image: 'rubyred.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55671884/' });}
 
         
@@ -184,11 +170,9 @@ document.getElementById("resultbutton").addEventListener('click' , function(){
         const matchedPetsContainer = document.getElementById('matchedPets');
             if (matchedPets.length==0){
                 if(petchoice=="cat"){
-                matchedPets.push({ name: 'Biz', image: 'https://www.sfspca.org/wp-content/uploads/2024/03/92478dce-91ca-4011-b35f-395f5c9d29ad.jpg', description: 'https://www.sfspca.org/sfspca-adoption/17524988/' });
-                matchedPets.push({ name: 'Parsley', image: 'https://www.sfspca.org/wp-content/uploads/2024/03/e8545243-b057-4455-88f8-5a24123acb33.jpg', description: 'https://www.sfspca.org/sfspca-adoption/53830288/' });
+                matchedPets.push({ name: 'Queen Quintessa', image: 'queenquintessa.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55431244/' });
                 }
                 if(petchoice=="dog"){
-                    matchedPets.push({ name: 'Angel', image: 'https://www.sfspca.org/wp-content/uploads/2024/02/b412f490-cb27-4489-a8ff-ba55a39d83ff.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55415417/' });
                     matchedPets.push({ name: 'Wonder', image: 'https://www.sfspca.org/wp-content/uploads/2024/03/f18a7dfe-bc8c-4441-98e9-a005a7c5fbd5.jpg', description: 'https://www.sfspca.org/sfspca-adoption/55109511/' });
                 }
             }else{
